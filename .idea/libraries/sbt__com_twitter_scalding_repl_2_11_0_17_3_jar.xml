@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: com.twitter:scalding-repl_2.11:0.17.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/scalding-repl_2.11/jars/scalding-repl_2.11-0.17.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/scalding-repl_2.11/srcs/scalding-repl_2.11-0.17.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
