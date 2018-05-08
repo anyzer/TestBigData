@@ -13,19 +13,20 @@
     docker cp ~/cookie.txt sandbox-hdp:/root/chen/
     '''
     
+    docker exec sandbox-hdp rm root/testbigdata_2.11-1.0.jar
+    
 2. Put Data to Hadoop
     
     '''
     hadoop fs -mkdir /user/input
-    hadoop fs -put /root/weather/ /user/input/ 
+    hadoop fs -put /root/weather/ /user/input/     
     hadoop fs -ls /user/input/weather
     '''
     
 3. Put Jar file to Docker
     
     '''
-    docker cp ./target/scala-2.11/testbigdata_2.11-1.0.jar sandbox-hdp:/root/
-    
+    docker cp ./target/scala-2.11/testbigdata_2.11-1.0.jar sandbox-hdp:/root/   
     hadoop jar testbigdata_2.11-1.0.jar FileSystemCat /user/data/note.txt
     '''
     
@@ -38,8 +39,8 @@
 5. output is folder in Hadoop
 
     '''
-    hadoop fs -get output /root/
-    cd output
+    hadoop fs -get output /root/   
+    cd output    
     cat part-r-00000
     '''
     
@@ -62,15 +63,15 @@
                   
     Step 1 => execute shell
               
-              '. start-sandbox-hdp-standalone_2-6-4.sh'
+              '''. start-sandbox-hdp-standalone_2-6-4.sh'''
               
-              Above shell script contains 'docker pull ...'
+              Above shell script contains 'docker pull ...
               
     Step 2 => Add Sandbox Hostname to your host file  
     
               '''
               echo '127.0.0.1 sandbox.hortonworks.com sandbox-hdp.hortonworks.com sandbox-hdf.hortonworks.com' | sudo tee -a /private/etc/hosts
-              ''
+              '''
     
               To be able to access HDP services on the Sandbox from our host machine’s browser, 
               you will need to add sandbox.hortonworks.com mapped to your IP address to the list of hosts in your hosts file. 
@@ -97,26 +98,18 @@
                   Password:
                  
                   (3.1) SSH Client
-                  
-                      Use the SSH client of your choice:
                       
-                      ssh root@127.0.0.1 -p 2222
+                      '''ssh root@127.0.0.1 -p 2222'''
                       
                       username/password: root / hadoop  (p@ssw0rd)
                  
                       
-                      If no SSH client is installed, use the built-in web client:
-                      
-                      http://127.0.0.1:4200
+                      If no SSH client is installed, use the built-in web client: http://127.0.0.1:4200
                       
                       Copy file from docker: docker cp sandbox-hdp:/root/build.out ~/workspace/
-                      Copy file to docker:   docker cp ~/cookie.txt sandbox-hdp:/root/chen/
+                      Copy file to docker:   docker cp ~/cookie.txt sandbox-hdp:/root/chen/                      
                       
-                      
-                     ====
-                      
-                      Copy file from Host to Hadoop Server:
-                          https://www.tutorialspoint.com/hadoop/hadoop_hdfs_operations.htm
+                      Copy file from Host to Hadoop Server: https://www.tutorialspoint.com/hadoop/hadoop_hdfs_operations.htm
                           
                           * hadoop fs -mkdir /user/input 
                           * hadoop fs -put /home/file.txt /user/input 
@@ -124,24 +117,18 @@
                           
                           * hadoop fs -cat /user/output/outfile 
                           * hadoop fs -get /user/output/ /home/hadoop_tp/ 
-                      
-                      
+                                            
                   (3.2) Zeppelin
                       http://127.0.0.1:9995
-                      
-                      
+                                           
                   (3.3) Ranger
-                      http://127.0.0.1:6080     
-                  
+                      http://127.0.0.1:6080                       
                       username & password: raj_ops
-                              
-                              
+                                                            
                   (3.4) WORKFLOW MANAGER
-                      http://127.0.0.1:8080/#/main/views/WORKFLOW_MANAGER/1.0.0/workflow_manager
-                      
+                      http://127.0.0.1:8080/#/main/views/WORKFLOW_MANAGER/1.0.0/workflow_manager                      
                       username & password: raj_ops
-                                      
-                                      
+                                                                          
                   (3.5) Ambari
                       http://127.0.0.1:8080
                       
@@ -152,11 +139,9 @@
                       Get instructions to set password
                       
                       Note: Ambari supports multiple roles
-              
-              
+                           
                   (3.6) Check HDFS Data
                       https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/2/
-                      
-                  
+                                        
                   (3.7) Install RStudio on Hortonworks Docker Sandbox
                       https://community.hortonworks.com/content/kbentry/69424/setting-up-rstudio-on-hortonworks-docker-sandbox-2.html
