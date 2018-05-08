@@ -1,1 +1,35 @@
-[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/testbigdata_2.11-1.0.jar[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/testbigdata_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/mr/MaxTemperatureMapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/mr/MaxTemperatureMapper.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/mr/MaxTemperatureReducer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/mr/MaxTemperatureReducer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MaxTemperature.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/MaxTemperature.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Test.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/FileIO$$anonfun$readMaxTempFromGzFile$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/FileIO$$anonfun$readMaxTempFromGzFile$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Test$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	URLCat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/URLCat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/mr[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/mr[0m
+[0m[[0m[0mdebug[0m] [0m[0m	FileSystemCat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/FileSystemCat.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Test$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/FileIO$$anonfun$readFileInFolder$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/FileIO$$anonfun$readFileInFolder$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MaxTemperatureWithCombiner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/MaxTemperatureWithCombiner.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/FileIO$$anonfun$readFileInFolder$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/FileIO$$anonfun$readFileInFolder$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Test$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Test$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Utilities/FileIO.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/guoch/IdeaProjects/TestBigData/target/scala-2.11/classes/Utilities/FileIO.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
