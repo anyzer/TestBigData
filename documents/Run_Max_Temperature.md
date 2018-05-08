@@ -18,6 +18,9 @@
 6. Run Hadoop Server from TestScalding
     . run-local.sh
     
+7. Read file from Hadoop
+
+    hadoop jar testbigdata_2.11-1.0.jar URLCat hdfs://sandbox.hortonworks.com/user/root/testData/readme1.md
     
 A MapReduce job is a unit of work that the client wants to be performed: it consists of the input data, the MapReduce program, 
 and configuration information. Hadoop runs the job by dividing it into tasks, of which there are two types: map tasks and reduce tasks. 

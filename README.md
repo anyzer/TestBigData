@@ -14,3 +14,4 @@
     
 Run Hadoop from TestScalding
     . run-local.sh
+    

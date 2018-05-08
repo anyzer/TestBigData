@@ -1,5 +1,5 @@
-import Utilities.MaxTemperatureMapper;
-import Utilities.MaxTemperatureReducer;
+import Utilities.mr.MaxTemperatureMapper;
+import Utilities.mr.MaxTemperatureReducer;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
