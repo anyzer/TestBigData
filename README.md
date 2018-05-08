@@ -6,14 +6,41 @@
         
     * Introduction +: https://hortonworks.com/tutorial/hadoop-tutorial-getting-started-with-hdp/section/1/
         - Important Concepts
+      
         
 1. Copy Data to Docker
 
     '''
     docker cp ~/cookie.txt sandbox-hdp:/root/chen/
-    '''
     
     docker exec sandbox-hdp rm root/testbigdata_2.11-1.0.jar
+    
+    docker exec -it sandbox-hdp /bin/bash  or
+    docker exec -it sandbox-hdp /bin/ash
+    docker exec -it -u chen sandbox-hdp /bin/bash
+    
+    useradd -ms /bin/bash chen       (add user chen)
+    '''
+    
+    When jumped into Container as root user, change password for a user:
+    
+    '''
+    passwd                       (change user root password)
+    passwd <userName>            (change user <userName> password)  Example: passwd chen
+    '''
+    
+    Outside Docker Container change password:
+    
+    ''' 
+    $PASS='p@ssw0rd'
+    echo -e "p@ssw0rd\np@ssw0rd" | docker exec -i <container-id-or-name> passwd
+    '''
+    
+    Remove docker container
+    
+    '''
+    docker rm $(docker ps -aq)    //kill all existing container
+    '''
     
 2. Put Data to Hadoop
     
@@ -22,6 +49,7 @@
     hadoop fs -put /root/weather/ /user/input/     
     hadoop fs -ls /user/input/weather
     '''
+   
     
 3. Put Jar file to Docker
     
@@ -30,11 +58,13 @@
     hadoop jar testbigdata_2.11-1.0.jar FileSystemCat /user/data/note.txt
     '''
     
+    
 4. Run Jar file
     
     '''
     hadoop jar testbigdata_2.11-1.0.jar MaxTemperature /user/input/weather/1901.gz output
     '''
+    
     
 5. output is folder in Hadoop
 
@@ -43,6 +73,7 @@
     cd output    
     cat part-r-00000
     '''
+    
     
 6. Run Hadoop
  
